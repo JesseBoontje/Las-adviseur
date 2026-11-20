@@ -1,9 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "las-adviseur",
+  "account_id": "1aaa91af61ee9076f80653f8a1a554d7",
+  "routes": [{ "pattern": "las.djez.app", "custom_domain": true }],
   "main": "worker.ts",
   "compatibility_date": "2026-10-11",
-  "workers_dev": true,
+  "workers_dev": false,
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
@@ -13,7 +15,7 @@
     {
       "binding": "DB",
       "database_name": "lashulp-db",
-      "database_id": "1d07875e-40cc-4f9b-bacb-b93d01806459"
+      "database_id": "0d784b4d-15e5-46d3-9feb-406ddf44029f"
     }
   ]
 }
